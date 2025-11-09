@@ -19,7 +19,7 @@
     "clean": "rimraf dist"
   },
   "devDependencies": {
-    "@fenera/tsconfig-base": "file:../tsconfig-base",
+    "@fenralab/tsconfig-base": "file:../tsconfig-base",
     "rimraf": "^6.0.0",
     "tsc-watch": "^7.2.0",
     "typescript": "^5.6.0"
