@@ -5,7 +5,7 @@ export type TMethod<TBaseclass, TArguments extends any[], TError = any> = TFunct
 
 export function emptynext<TError = any> (error?: TError){}
 
-export class MiddlewareManager<
+export class Manager<
     TArguments extends any[],
     TError = any
 > {
