@@ -1,0 +1,37 @@
+{
+  "name": "@fenralab/core",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "watch": "node --watch dist/index.js",
+    "build": "tsc -p tsconfig.json",
+    "dev": "npm run watch && node dev:compileWatch",
+    "dev:compileWatch": "tsc -w --preserveWatchOutput",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "@fenera/tsconfig-base": "file:../tsconfig-base",
+    "typescript": "^5.6.0",
+    "rimraf": "^6.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fenralab/core.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Core utilities for @FenraLab packages"
+}
