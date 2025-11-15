@@ -1,4 +1,4 @@
 {
-  "extends": "@fenralab/tsconfig-base/tsconfig.json",
+  "extends": "@fenralab/tsconfig-base/tsconfig.json"
 }
 
